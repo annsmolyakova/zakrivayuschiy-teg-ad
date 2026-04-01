@@ -1,18 +1,22 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-
-
 :root {
-    --font-main: 'Inter' , sans-serif;
-    --font-accent: 'PressStart2P', sans-serif;
-    --card-text-width: 400;
-    --card-title-width: 700;
-    --header-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-    --stroke-color: #ffffffb3;
-    --animation-fill-color: #FF0000;
-    --contour-color: #000;
-  }
-  
-  .page {
-    font-family: var(--font-main);
-    font-variation-settings:"wght" var(--card-text-width);
+    --main-font: "Inter-Variable", sans-serif;
+    --accent-font: "PressStart2P", fantasy;
+    --card-text-weight: 400;
+    --card-title-weight: 700;
+    --base-font-size: 18px;
+    --accent-font-size: 14px;
+    --background-color: #FFFFFF;
+    --accent-color: #000000;
+    --shadow-stroke: 1px #000;
+    --text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    --card-gap: 50px;
+    --contour-color: black;
+    --animation-fill-color: red;
+    --time: 0.3s;
+    --heart-contour-color: black;
+    --heart-sparks-color: red;
+    --background-image: 
+      repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+      repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   }
