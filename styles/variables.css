@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+
+:root {
+    --font-main: 'Inter' , sans-serif;
+    --font-accent: 'PressStart2P', sans-serif;
+    --card-text-width: 400;
+    --card-title-width: 700;
+    --header-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+    --stroke-color: #ffffffb3;
+    --animation-fill-color: #FF0000;
+    --contour-color: #000;
+  }
+  
+  .page {
+    font-family: var(--font-main);
+    font-variation-settings:"wght" var(--card-text-width);
+  }

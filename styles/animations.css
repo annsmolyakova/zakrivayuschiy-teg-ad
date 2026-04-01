@@ -9,3 +9,90 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+.like-icon .sparks {
+    fill: transparent;
+  }
+  
+  @keyframes like-zoom {
+    0% {
+      scale: 1;
+    }
+  
+    95% {
+      scale: 1.5;
+    }
+  
+    100% {
+      scale: 1;
+    }
+  }
+  
+  @keyframes like-sparks {
+    from {
+      fill: transparent;
+    }
+  
+    to {
+      fill: var(--animation-fill-color);
+    }
+  }
+  
+  .like-icon .core {
+    fill: transparent;
+    transition: fill 0.3s 0.05s linear; 
+  }
+  
+  .like-icon .main-body {
+    fill: transparent;
+    transition: fill 0.3s linear;
+  }
+  
+  .like-icon:hover .core {
+    fill: var(--contour-color, #000);
+    transition: fill 0.3s 0s linear; 
+  }
+  
+  .like-icon:hover .main-body {
+    fill: var(--contour-color, #000);
+    transition: fill 0.3s 0.03s linear; 
+  }
+  
+  .like-icon:active .core {
+    fill: var(--animation-fill-color, #000);
+    transition: fill 0.3s 0s linear; 
+  }
+  
+  .like-icon:active .main-body {
+    fill: var(--animation-fill-color, #000);
+    transition: fill 0.3s 0.03s linear; 
+  }
+  
+  .like-icon.is-liked .core {
+    fill: var(--animation-fill-color);
+    transition: fill 0.3s linear;
+  }
+  
+  .like-icon.is-liked .main-body {
+    fill: var(--animation-fill-color);
+    transition: fill 0.3s 0.05s linear;
+  }
+  
+  .like-icon .contour {
+    transition: fill 0.1s linear;
+  }
+  
+  .like-icon.is-liked .contour {
+    fill: var(--animation-fill-color);
+    transition: fill 0.3s 0.06s linear;
+  }
+  
+  .like-icon.is-liked .body {
+    transform-origin: center;
+    animation: like-zoom 0.3s 0.1s ease-in alternate;
+  }
+  
+  .like-icon.is-liked .sparks {
+    transform-origin: center;
+    animation: like-sparks 0.3s 0.3s ease-in alternate;
+  }
