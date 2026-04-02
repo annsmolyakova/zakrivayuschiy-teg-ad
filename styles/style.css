@@ -19,7 +19,7 @@
   align-items: center;
   flex-direction: column;
   font-family: var(--accent-font);
-  font-weight: var(--card-text-weght);
+  font-weight: var(--card-text-weight);
   text-transform: uppercase;
   background-color: var(--background-color);
   border: 2px solid var(--accent-color);
